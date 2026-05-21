@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Equipment Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <h1>IT Equipment Allocation Form</h1>
+    <p>System / Device Handover Registration</p>
+  </div>
+
+  <form id="equipmentForm">
+
+    <div class="grid">
+
+      <div class="field">
+        <label>Employee Name</label>
+        <input type="text" id="employee_name" required />
+      </div>
+
+      <div class="field">
+        <label>Employee ID</label>
+        <input type="text" id="employee_id" required />
+      </div>
+
+      <div class="field">
+        <label>Location</label>
+        <input type="text" id="location" />
+      </div>
+
+      <div class="field">
+        <label>Department</label>
+        <input type="text" id="department" />
+      </div>
+
+      <div class="field">
+        <label>System / Device Type</label>
+        <select id="device_type">
+          <option value="Computer">Computer</option>
+          <option value="Laptop">Laptop</option>
+          <option value="Printer">Printer</option>
+          <option value="Mobile">Mobile</option>
+          <option value="Tablet">Tablet</option>
+          <option value="SIM Card">SIM Card</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Brand / Model</label>
+        <input type="text" id="brand_model" />
+      </div>
+
+      <div class="field">
+        <label>SIM & Phone</label>
+        <input type="text" id="sim_phone" />
+      </div>
+
+      <div class="field full">
+        <label>Remarks</label>
+        <textarea id="remarks"></textarea>
+      </div>
+
+    </div>
+
+    <button type="submit">Submit Data</button>
+
+  </form>
+
+  <div id="successMessage"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
